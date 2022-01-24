@@ -5,11 +5,11 @@
   "description": "Starter project for JavaScript basics",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack-dev-server",
     "build": "webpack",
-    "watch": "webpack --watch",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "watch": "webpack --watch"
   },
   "author": "Svea Frontend",
   "license": "MIT",
